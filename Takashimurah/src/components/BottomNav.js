@@ -12,9 +12,10 @@ const Tab = createBottomTabNavigator();
 export default function BottomNav() {
     return(
         <NavigationContainer>
-            <Tab.Navigator initialRouteName='Home' screenOptions={{headerShown:false, tabBarActiveTintColor:color.iconColor}}>
-                <Tab.Screen name="Home" component={Home} options={{ tabBarIcon:()=>(<Feather name="home" size={24} color={color.iconColor}/>)}}/>
-                <Tab.Screen name="Detail" component={Detail} options={{ tabBarIcon:()=>(<Feather name="heart" size={24} color={color.iconColor}/>)}}/>
+            <Tab.Navigator initialRouteName='Home' screenOptions={{headerShown:false, tabBarActiveTintColor:color.activeColor, tabBarInactiveTintColor:color.iconColor,
+                                                                    tabBarStyle:{backgroundColor:color.headerFooterColor,}}}>
+                <Tab.Screen name="Home" component={Home} options={{ tabBarIcon:({color})=>(<Feather name="home" size={24} color={color}/>) }}/>
+                <Tab.Screen name="Detail" component={Detail} options={{ tabBarIcon:({color})=>(<Feather name="heart" size={24} color={color}/>)}}/>
 
             </Tab.Navigator>
         </NavigationContainer>

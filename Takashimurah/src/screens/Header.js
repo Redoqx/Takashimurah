@@ -21,7 +21,7 @@ const Header = () =>{
                         <View style={{margin: 5}}>
                             <Feather name="search" size={24} color={color.iconColor}/>
                         </View>
-                        <TextInput style={{color: color.iconColor, fontWeight:"bold", fontSize: 16}} />
+                        <TextInput style={{color: color.iconColor, fontWeight:"bold", fontSize: 16, width:'90%'}} />
                     </View>
                     <View>
                         <Feather name="share-2" size={25} color={color.iconColor}/>
