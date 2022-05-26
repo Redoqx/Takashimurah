@@ -1,5 +1,7 @@
 import React  from 'react';
 import { View, StyleSheet, Image, StatusBar, Text, ScrollView } from 'react-native';
+import { Feather } from '@expo/vector-icons';
+import color from '../config/color'
 
 import Product from '../../assets/Product.png'
 import profilToko from '../../assets/profilToko.png'
@@ -40,6 +42,7 @@ const Detail = () => {
                         
                     </View>
                     <View style={styles.wrapRating}>
+                        <Feather name="star" size={19} color={color.starColor}/>
                         <View style={styles.rating}>
                             <Text>4,8</Text>
                         </View>
@@ -114,7 +117,7 @@ const Detail = () => {
 
                 <View style={styles.wrapShop}>
                     <View style={styles.chatShop}>
-                        <Text style={styles.chatText}>Chat</Text>
+                        <Feather name="message-square" size={19} color={color.headerFooterColor}/>
                     </View>
                     <View style={styles.shop}>
                         <Text style={styles.shopText}>Beli Sekarang</Text>

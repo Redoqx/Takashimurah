@@ -3,4 +3,5 @@ export default {
     headerFooterColor: "#48696E",
     backgroundColor: "white",
     panelColor: "#F3FFED",
+    starColor : "#FFCE31"
 };
