@@ -9,12 +9,12 @@ import {
 } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import color from '../config/color'
-import statusBarHandler from '../components/statusBarHandler';
+import StatusBarHandler from '../components/StatusBarHandler';
 
 const Header = () =>{
     return(
         <View>
-            <statusBarHandler/>
+            <StatusBarHandler/>
             <View style={styles.header}>
                 <View style={styles.headerItemContainer}>
                     <View style={styles.search}>
