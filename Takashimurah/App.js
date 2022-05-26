@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
+import Detail from './src/screens/Detail';
 import Home from './src/screens/Home';
 
 export default function App() {
@@ -7,7 +8,7 @@ export default function App() {
     //   <Text>Open up App.js to start working on your app!</Text>
     //   <StatusBar style="auto" />
     // </View>
-    <Home />
+    <Detail />
   );
 }
 

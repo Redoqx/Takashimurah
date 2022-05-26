@@ -3,15 +3,13 @@ import { View, StyleSheet, Image, StatusBar, Text, ScrollView } from 'react-nati
 
 import Product from '../../assets/Product.png'
 import profilToko from '../../assets/profilToko.png'
+import Header from './Header';
 
 const Detail = () => {
     return (
         <ScrollView>
+            <Header/>
         <View style={styles.container}>
-            <View style={styles.header}>
-                <Text>Hallo</Text>
-            </View>
-
             <View style={styles.body}>
             
                 <View style={styles.product}>
@@ -136,7 +134,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor : '#F5F5F5',
-        marginTop: StatusBar.currentHeight || 0,
+        // marginTop: StatusBar.currentHeight || 0,
         alignItems : 'center',
     },
     // header: {
