@@ -16,7 +16,7 @@ const Detail = () => {
             
                 <View style={styles.product}>
                     <Image source={Product}
-                    style={{width: 400, height:400}}
+                    style={styles.imgProduct}
                     />
                 </View>
 
@@ -137,22 +137,29 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor : '#F5F5F5',
-        // marginTop: StatusBar.currentHeight || 0,
+        marginTop: StatusBar.currentHeight || 0,
         alignItems : 'center',
+        width: "100%",
     },
-    // header: {
-    //     backgroundColor : '#48696E',
-    // },
+    imgProduct: {
+        width:400,
+        height:400,
+        alignItems: 'center',
+        alignContent: 'center',
+        alignSelf: 'center',
+    },
     product: {
         backgroundColor: '#fff',
     },
     price: {
         padding: 10,
         backgroundColor: '#fff',
+        
     },
     priceText: {
         fontWeight: 'bold',
-        fontSize: 30,
+        fontSize: 20,
+        width:"50%",
     },
     desc: {
         paddingLeft: 10,
@@ -161,7 +168,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
     descText: {
-        fontSize: 20,
+        fontSize: 15,
+        width:"100%",
     },
     wrap: {
         flexDirection : 'row',
@@ -171,12 +179,15 @@ const styles = StyleSheet.create({
         paddingRight: 15,
         paddingBottom: 15,
         justifyContent: 'space-between',
+        width: "100%",
     },
     wrapTerjual: {
         fontSize: 12,
         flexDirection: 'row',
         padding: 10,
         paddingLeft: 0,
+        width: "23%"
+        
     },
     textTerjual: {
         padding: 2,
@@ -188,11 +199,10 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         fontSize: 12,
         flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
         borderRadius: 10,
+        width: "23%",
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     rating: {
         padding: 2,
@@ -204,27 +214,27 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         fontSize: 12,
         flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
         borderRadius: 10,
+        width: "23%",
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     testimoni: {
         padding: 2,
+        
     },
     countTestimoni: {
         padding: 2,
+        
     },
     wrapDiskusi: {
         borderWidth: 1,
         fontSize: 12,
         flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
         borderRadius: 10,
+        width: "23%",
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     diskusi: {
         padding: 2,
@@ -239,10 +249,12 @@ const styles = StyleSheet.create({
         padding: 10,
         justifyContent: 'space-between',
         marginTop: 10,
+        width: "100%"
     },
     wrapTokolagi : {
         flexDirection : 'row',
         display: 'flex',
+        width: "50%",
     },
     namaText : {
         fontWeight: 'bold',
@@ -294,60 +306,54 @@ const styles = StyleSheet.create({
         display: 'flex',
         backgroundColor: '#fff',
         paddingTop: 15,
-        paddingLeft:15,
+        paddingLeft: 15,
         paddingRight: 15,
         paddingBottom: 15,
         justifyContent: 'space-between',
         marginTop: 10,
+        width: "100%",
     },
     chatShop: {
         borderWidth: 1,
         fontSize: 12,
         flexDirection: 'row',
+        borderRadius: 10,
         paddingTop: 10,
         paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 10,
+        width: "20%",
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     shop : {
         borderWidth: 1,
         fontSize: 12,
         flexDirection: 'row',
+        borderRadius: 10,
         paddingTop: 10,
         paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 10,
+        width: "35%",
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     shopText: {
-        paddingRight: 25,
-        paddingLeft: 25,
         fontWeight: 'bold',
     },
     cart: {
         borderWidth: 1,
         fontSize: 12,
         flexDirection: 'row',
+        borderRadius: 10,
         paddingTop: 10,
         paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 10,
         backgroundColor: '#48696E',
+        width: "35%",
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     cartText: {
-        paddingRight: 25,
-        paddingLeft: 25,
         color: '#fff',
         fontWeight: 'bold',
-
     }
-
-
-    
-
-
 })
 
 export default Detail;
