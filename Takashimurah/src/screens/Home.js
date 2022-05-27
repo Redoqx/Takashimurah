@@ -1,12 +1,13 @@
 import{
-    View
+    View, Text
 } from 'react-native';
 import Header from "./Header";
 
-const Home = () => {
+const Home = ({navigation}) => {
     return(
         <View>
             <Header/>
+            <Text onPress={()=>navigation.navigate('Detail')}>Laptop</Text>
         </View>
     )
 }
