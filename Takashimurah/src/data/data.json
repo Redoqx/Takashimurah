@@ -2,7 +2,7 @@
     {
         "id": "0",
         "productName": "Huawei MateBook X Pro",
-        "image": "huawei-matebook-pro.jpg",
+        "image": "https://images.app.goo.gl/uELzqjqivZWTRmo36",
         "grade": "4.8",
         "penjual": "@huaweiofc",
         "price": "7.000.000",
@@ -11,7 +11,7 @@
     {
         "id": "1",
         "productName": "Apple Macbook Pro 2018, 16GB,1TB GB SSD",
-        "image": "macbook-pro-15.jpg",
+        "image": "https://images.app.goo.gl/y2W6ofQNjWKXvajt5",
         "grade": "4.8",
         "penjual": "@iboxindolampung",
         "price": "13.000.000",
@@ -20,7 +20,7 @@
     {
         "id": "2",
         "productName": "Dell XPS 13 16GB 512GB SSD, 13.3-inch, Full HD",
-        "image": "dell-xps-13.png",
+        "image": "https://images.app.goo.gl/pM41NCmwUHjUF1rTA",
         "grade": "4.8",
         "penjual": "@dellofc",
         "price": "7.000.000",
@@ -29,7 +29,7 @@
     {
         "id": "3",
         "productName": "Asus ZenBook Flip S 16GB 512GB SSD 13.3-inch, Full HD touchscreen",
-        "image": "asus-zenbook-flip-s.jpg",
+        "image": "https://images.app.goo.gl/51WEwcyCgcuHWv4v5",
         "grade": "4.8",
         "penjual": "@asusofc",
         "price": "8.500.000",
@@ -38,7 +38,7 @@
     {
         "id": "4",
         "productName": "Samsung Notebook 9 16GB 256GB SSD 15-inch, Full HD",
-        "image": "samsung-notebook-9.jpg",
+        "image": "https://images.app.goo.gl/Y4fxSLYnVjxux6Mn9",
         "grade": "4.8",
         "penjual": "@samsungofc",
         "price": "9.000.000",
@@ -47,7 +47,7 @@
     {
         "id": "5",
         "productName": "REDRAGON K577R Mechanical Gaming Keyboard 17.6 x 6 x 1.6 inches",
-        "image": "REDRAGON K577R Mechanical Gaming Keyboard.jpg",
+        "image": "https://images.app.goo.gl/a3M9tLvdfQok5aJ69",
         "grade": "4.8",
         "penjual": "@reddragonofc",
         "price": "699.000",
@@ -56,43 +56,35 @@
     {
         "id": "6",
         "productName": "Skyloong GK71 SK71slim Warna-warni RGB Gateron",
-        "image": "Skyloong GK71 SK71slim Warna-warni RGB Gateron.jpg",
+        "image": "https://images.app.goo.gl/J6Q79SBS9P4Ki9yDA",
         "grade": "4.8",
         "penjual": "@skyloongfc",
         "price": "799.000",
         "description": "Bhinneka merupakan toko online terpercaya di Indonesia yang hadir sejak 1993 dan menjual Skyloong GK71 SK71slim Warna-warni RGB Gateron terlengkap. Dengan Bhinneka, pelanggan dan calon konsumen bisa memilih Skyloong GK71 SK71slim Warna-warni RGB Gateron Keyboard terbaik."
     },
     {
-        "id": "6",
+        "id": "7",
         "productName": "Metoo Mechanical Gaming Keyboard LED TKL 87 Key Blue Switch - Silver",
-        "image": "metokeyboard.jpg",
+        "image": "https://images.app.goo.gl/R2puC8yaChV1TKXu9",
         "grade": "4.8",
         "penjual": "@metofc",
         "price": "499.000",
         "description": "Keyboard gaming ini hadir dengan design keren ala gamer dengan Multicolor Backlight yang menyala-nyala. Base dari keyboard ini terbuat dari bahan metal sehingga memberi kesan mewah dan mahal. Keyboard ini juga telah menggunakan key mechanical sehingga mengetik menjadi lebih nyaman."
     },
     {
-        "id": "7",
-        "productName": "Kb871 Keyboard Gaming Usb 104 Tombol",
-        "image": "kb871.jpg",
-        "grade": "4.8",
-        "penjual": "@kb871ofc",
-        "price": "500.000",
-        "description": "Bhinneka merupakan toko online terpercaya di Indonesia yang hadir sejak 1993 dan menjual Kb871 Keyboard Gaming Usb 104 Tombol terlengkap. Dengan Bhinneka, pelanggan dan calon konsumen bisa memilih Kb871 Keyboard Gaming Usb 104  Keyboard terbaik."
-    },
-    {
         "id": "8",
         "productName": "Kb871 Keyboard Gaming Usb 104 Tombol",
-        "image": "kb871.jpg",
+        "image": "https://images.app.goo.gl/Gs371jkAbG4F9GtM9",
         "grade": "4.8",
         "penjual": "@kb871ofc",
         "price": "500.000",
         "description": "Bhinneka merupakan toko online terpercaya di Indonesia yang hadir sejak 1993 dan menjual Kb871 Keyboard Gaming Usb 104 Tombol terlengkap. Dengan Bhinneka, pelanggan dan calon konsumen bisa memilih Kb871 Keyboard Gaming Usb 104  Keyboard terbaik."
     },
+    
     {
         "id": "9",
         "productName": "HITIME XVX M61 60% Mechanical Keyboard Wireless, Ultra-Compact 2.4G Rechargeable Gaming Keyboard",
-        "image": "hitme.jpg",
+        "image": "https://images.app.goo.gl/TN6P6DCSBCiEmEcx7",
         "grade": "4.8",
         "penjual": "@hitmeofc",
         "price": "499.000",
@@ -101,7 +93,7 @@
     {
         "id": "10",
         "productName": "BenQ ZOWIE Monitor Gaming Esport ",
-        "image": "ZOWIE.jpg",
+        "image": "https://images.app.goo.gl/7EAG2vdFeWFDz3776",
         "grade": "4.8",
         "penjual": "@zowieofc",
         "price": "10.499.000",
@@ -110,7 +102,7 @@
     {
         "id": "11",
         "productName": "MSI ESPORTS 23.8'inch GAMING MONITOR OPTIX (G241)",
-        "image": "VA249HE.jpg",
+        "image": "https://images.app.goo.gl/7hCaJ3pE3cvhWw2t7",
         "grade": "4.8",
         "penjual": "@asusofc",
         "price": "4.999.000",
@@ -119,7 +111,7 @@
     {
         "id": "12",
         "productName": "Xiaomi Mi Desktop Monitor 27'inch Layar IPS 1080P 27 inch Garansi Resmi",
-        "image": "Xiaomi Mi Desktop .jpg",
+        "image": "https://images.app.goo.gl/L8eBHwkpzHfrrC1s5",
         "grade": "4.8", 
         "penjual": "@xiaomiofc",
         "price": "2.495.000",
@@ -128,7 +120,7 @@
     {
         "id": "13",
         "productName": "Dell launches new monitor range including its first 40-inch curved 5K display",
-        "image": "dellmonitor.jpg",
+        "image": "https://images.app.goo.gl/BhgR7PMpAyim8pyT7",
         "grade": "4.8",
         "penjual": "@dellofc",
         "price": "5.999.000",
@@ -137,7 +129,7 @@
     {
         "id": "14",
         "productName": "Samsung Odyssey G7 27' inch Curved Gaming Monitor",
-        "image": "odyssey.jpg",
+        "image": "https://images.app.goo.gl/qEeqyow7tXG7N2Vd8",
         "grade": "4.8",
         "penjual": "@samsungofc",
         "price": "5.999.000",
@@ -146,7 +138,7 @@
     {
         "id": "15",
         "productName": "Delux M618 RGB Vertical Wired Optical Ergonomic Mouse 4000 DPI - Black",
-        "image": "delux.jpg",
+        "image": "https://images.app.goo.gl/UFGWhDtyEyZwRsn8A",
         "grade": "4.8",
         "penjual": "@deluxofc",
         "price": "1.999.000",
@@ -155,7 +147,7 @@
     {
         "id": "16",
         "productName": "Razer Mamba Wireless Gaming Mouse: 16,000 DPI Optical Sensor - Chroma RGB Lighting - 7 Programmable Buttons - Mechanical Switches - Up to 50 Hr Battery Life ",
-        "image": "razer.jpg",
+        "image": "https://images.app.goo.gl/LxECqhzJ8TgtMvwG8",
         "grade": "4.8",
         "penjual": "@razerofc",
         "price": "1.299.000",
@@ -164,7 +156,7 @@
     {
         "id": "17",
         "productName": "Apple Magic Mouse 2 - Space Grey ",
-        "image": "logitech.jpg",
+        "image": "https://images.app.goo.gl/3az5fJfpDtp1UMFL6",
         "grade": "4.8",
         "penjual": "@iboxindonesiaofc",
         "price": "799.000",
@@ -173,7 +165,7 @@
     {
         "id": "18",
         "productName": "Logitech G502 Lightspeed Wireless Gaming Mouse with Hero 25K Sensor",
-        "image": "LogitechG502.jpg",
+        "image": "https://images.app.goo.gl/A6cvmKu63Hdtc38c8",
         "grade": "4.8",
         "penjual": "@logitechofc",
         "price": "599.000",
@@ -182,7 +174,7 @@
     {
         "id": "19",
         "productName": "Mouse Wireless ROBOT M312 2.4GHz Silent Optical 1600DPI USB",
-        "image": "robot.jpg",
+        "image": "https://images.app.goo.gl/jagpzGEdHL33odV98",
         "grade": "4.8",
         "penjual": "@robotofc",
         "price": "399.000",
