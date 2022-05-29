@@ -1,8 +1,14 @@
 import{
-    View, Text,
+    View, 
+    Text,
+    Dimensions,
+    StyleSheet,
 } from 'react-native';
 import Header from "./Header";
+import ItemContainer from '../components/ItemContainter';
 import { useEffect, useState } from 'react';
+
+const windowsWidth = Dimensions.get('window').width;
 
 const Home = ({navigation}) => {
     const [products, setProducts] = useState([])
@@ -22,10 +28,18 @@ const Home = ({navigation}) => {
         <View>
             <Header/>
             <Text onPress={()=>navigation.navigate('Detail')}>Laptop</Text>
-            <Text >{products.map(product => product.nama)}</Text>
+            {/* <Text >{products.map(product => product.nama)}</Text> */}
+            <ItemContainer/>
             
         </View>
     )
 }
+
+const Style = StyleSheet.create({
+    Item : {
+
+    }
+})
+
 
 export default Home;
