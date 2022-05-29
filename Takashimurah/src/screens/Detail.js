@@ -1,33 +1,42 @@
 import React  from 'react';
 import { View, StyleSheet, Image, StatusBar, Text, ScrollView } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-import color from '../config/color'
+import color from '../config/color';
+import { useState } from 'react';
 
 import Product from '../../assets/Product.png'
 import profilToko from '../../assets/profilToko.png'
 import Header from './Header';
 
-const Detail = () => {
+const Detail = ({route}) => {
+    const [postNama, setpostNama] = useState(route.params.nama);
+    const [postPrice, setpostPrice] = useState(route.params.harga);
+    const [postRating, setpostRating] = useState(route.params.rating);
+    const [postImage, setpostImage] = useState(route.params.image);
+    const [postSpesifikasi, setpostSpesifikasi] = useState(route.params.spesifikasi);
+    const [postPenjual, setpostPenjual] = useState(route.params.penjual);
     return (
+        <View >
+        <Header/>
         <ScrollView>
-            <Header/>
+            
         <View style={styles.container}>
             <View style={styles.body}>
             
                 <View style={styles.product}>
-                    <Image source={Product}
+                    <Image source={{uri:postImage}}
                     style={styles.imgProduct}
                     />
                 </View>
 
                 <View style={styles.price}>
                     <Text style={styles.priceText}>
-                        Rp.999.999.999
+                        Rp.{postPrice}
                     </Text>
                 </View>
                 <View style={styles.desc}>
                     <Text style={styles.descText}>
-                        Laptop Asus 2021 Core i5 RAM 16GB / 8GB / 4GB / SSD 512GB  256GB / HDD 2TB / 1TB/ 500GB, 14”
+                        {postNama}
                     </Text>
                 </View>
 
@@ -44,7 +53,7 @@ const Detail = () => {
                     <View style={styles.wrapRating}>
                         <Feather name="star" size={19} color={color.starColor}/>
                         <View style={styles.rating}>
-                            <Text>4,8</Text>
+                            <Text>{postRating}</Text>
                         </View>
                         <View style={styles.countRating}>
                             <Text>(14)</Text>
@@ -78,7 +87,7 @@ const Detail = () => {
                             />
                         </View>
                         <View style={styles.namaToko}>
-                            <Text style={styles.namaText}>@asusofficial</Text>
+                            <Text style={styles.namaText}>{postPenjual}</Text>
                         </View>
                     </View>
                     
@@ -111,7 +120,7 @@ const Detail = () => {
                     </View>
 
                     <View style={styles.aspek}>
-                        <Text>Laptop Asus 2021 Core i5 RAM 16GB / 8GB / 4GB / SSD 512GB  256GB / HDD 2TB / 1TB/ 500GB, 14..</Text>
+                        <Text>{postSpesifikasi}</Text>
                     </View>
                 </View>
 
@@ -130,6 +139,7 @@ const Detail = () => {
             </View>
         </View>
         </ScrollView>
+        </View>
     )
 }
 
@@ -140,6 +150,9 @@ const styles = StyleSheet.create({
         marginTop: StatusBar.currentHeight || 0,
         alignItems : 'center',
         width: "100%",
+    },
+    body: {
+        paddingHorizontal: "8%",
     },
     imgProduct: {
         width:400,
@@ -249,7 +262,7 @@ const styles = StyleSheet.create({
         padding: 10,
         justifyContent: 'space-between',
         marginTop: 10,
-        width: "100%"
+        width: "100%",
     },
     wrapTokolagi : {
         flexDirection : 'row',
