@@ -3,13 +3,133 @@ import { View, StyleSheet, Image, StatusBar, Text, ScrollView } from 'react-nati
 import { Feather } from '@expo/vector-icons';
 import color from '../config/color';
 
-import Header from './Header';
+import profilToko from '../../assets/profilToko.png'
 
 const Profil = () => {
     return (
         <ScrollView>
-            <Header/>
-        <Text>Profil ngehe</Text>
+            {/* <Header/> */}
+                <View style={styles.container}>
+
+                    <View style = {styles.head}>
+                        <Text style= {styles.headText}>Profil Anda </Text>
+                    </View>
+
+                    <View style = {styles.wrap}>
+                        <View style= {styles.wrapProfillagi}>
+                            <View>
+                                <Image source={profilToko}
+                                style={{width: 50, height: 50}}
+                                />
+                            </View>
+                            <View>
+                                <Text style={styles.namaText}>Sophia Nouriska</Text>
+                            </View>
+                        </View>
+                        <View style={styles.iconSetting}>
+                            <Feather name="settings" size={25} color={color.blackColor}/>
+                        </View>
+                    </View>
+
+                    <View style={styles.wrap}>
+                        <View style={styles.wrapBawahlagi}>
+                            <View style={styles.bawahprofil}>
+                                <Text>Buka Toko Gratis</Text>
+                            </View>
+                            <Feather name="chevron-right" size={25} color={color.blackColor}/>
+                            
+                        </View>
+                       
+                        <View style={styles.wrapBawahlagi}>
+                            <View style={styles.bawahprofil}>
+                                <Text>Daftar Affiliate</Text>
+                            </View>
+                            <Feather name="chevron-right" size={25} color={color.blackColor}/>
+                        </View>
+                    </View>
+                    
+                    {/* body bawah : aktivitas saya */}
+                    <View style = {styles.bodyBawah}>
+                        <View style = {styles.subJudul}>
+                            <Text style = {styles.subJudulText}>Aktivitas Saya</Text>
+                        </View>    
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="book" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text}> Daftar Transaksi </Text>
+                        </View>
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="heart" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Wishlist </Text>
+                        </View>
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="star" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Ulasan </Text>
+                        </View>
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="user-plus" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Toko yang Di-follow </Text>
+                        </View>
+
+                        {/* body bawah : semua kategori */}
+                        <View style = {styles.subJudul}>
+                            <Text style = {styles.subJudulText}>Semua Kategori</Text>
+                        </View> 
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="shopping-bag" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Kategori </Text>
+                        </View>
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="clipboard" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Top-Up & Tagihan </Text>
+                        </View>
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="send" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Travel & Entertainment </Text>
+                        </View>
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="dollar-sign" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Keuangan </Text>
+                        </View>
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="more-horizontal" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Layanan Lainnya </Text>
+                        </View>
+
+                        {/* body bawah : pusat bantuan */}
+                        <View style = {styles.subJudul}>
+                            <Text style = {styles.subJudulText}>Pusat Bantuan</Text>
+                        </View> 
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="user-x" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Pesanan Dikomplain </Text>
+                        </View>
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="headphones" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Bantuan Tokopedia Care </Text>
+                        </View>
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="file-text" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Ketentuan & Kebijakan Privasi </Text>
+                        </View>
+
+                        <View style = {styles.wrapBody}>
+                            <Feather name="info" size={19} color={color.blackColor}/>
+                            <Text style = {styles.text} > Info Aplikasi </Text>
+                        </View>
+                    </View>
+                </View>
         </ScrollView>
     )
 }
@@ -18,217 +138,85 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor : '#F5F5F5',
-        // marginTop: StatusBar.currentHeight || 0,
+        marginTop: StatusBar.currentHeight || 0,
         alignItems : 'center',
+        width: "100%",
+        height: "100%"
     },
-    // header: {
-    //     backgroundColor : '#48696E',
-    // },
-    product: {
+    head : {
+        flexDirection : 'row',
+        display: 'flex',
         backgroundColor: '#fff',
+        padding: 15,
+        paddingBottom: 0,
+        width: "100%"
     },
-    price: {
-        padding: 10,
-        backgroundColor: '#fff',
-    },
-    priceText: {
-        fontWeight: 'bold',
-        fontSize: 30,
-    },
-    desc: {
-        paddingLeft: 10,
-        paddingRight: 10,
-        paddingBottom: 10,
-        backgroundColor: '#fff',
-    },
-    descText: {
+    headText : {
         fontSize: 20,
+        fontWeight: 'bold'
     },
-    wrap: {
+    wrap:{
         flexDirection : 'row',
         display: 'flex',
         backgroundColor: '#fff',
-        paddingLeft:15,
-        paddingRight: 15,
-        paddingBottom: 15,
+        padding: 15,
+        paddingBottom: 0,
         justifyContent: 'space-between',
+        width: "100%"
     },
-    wrapTerjual: {
-        fontSize: 12,
-        flexDirection: 'row',
-        padding: 10,
-        paddingLeft: 0,
-    },
-    textTerjual: {
-        padding: 2,
-    },
-    countTerjual: {
-        padding: 2,
-    },
-    wrapRating: {
-        borderWidth: 1,
-        fontSize: 12,
-        flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 10,
-    },
-    rating: {
-        padding: 2,
-    },
-    countRating: {
-        padding: 2,
-    },
-    wrapTestimoni: {
-        borderWidth: 1,
-        fontSize: 12,
-        flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 10,
-    },
-    testimoni: {
-        padding: 2,
-    },
-    countTestimoni: {
-        padding: 2,
-    },
-    wrapDiskusi: {
-        borderWidth: 1,
-        fontSize: 12,
-        flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 10,
-    },
-    diskusi: {
-        padding: 2,
-    },
-    countDiskusi: {
-        padding: 2,
-    },
-    wrapToko:{
+    wrapProfillagi : {
         flexDirection : 'row',
         display: 'flex',
-        backgroundColor: '#fff',
-        padding: 10,
-        justifyContent: 'space-between',
-        marginTop: 10,
-    },
-    wrapTokolagi : {
-        flexDirection : 'row',
-        display: 'flex',
+        width: "50%",
     },
     namaText : {
         fontWeight: 'bold',
-        padding: 15,
-        fontSize: 17,
+        fontSize: 15,
+        padding: 10
+,       justifyContent: 'center',
+        alignItems: 'center',
     },
-    followToko: {
-        borderWidth: 1,
+    iconSetting: {
         fontSize: 12,
         flexDirection: 'row',
-        marginTop: 5,
-        marginBottom: 5,
-        paddingLeft: 15,
-        paddingRight: 15,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    wrapBawahlagi: {
+        borderWidth: 1,
+        width : "48%",
+        padding: 10,
         borderRadius: 10,
-    },
-    followText: {
-        padding: 10,
-        fontWeight: 'bold',
-    },
-    wrapDetail : {
-        backgroundColor: '#fff',
-        marginTop: 10,
-        padding: 10,
-    },
-
-    wrapDetaillagi: {
-        flexDirection: 'row',
-        display: 'flex',
-        borderBottomWidth: 1,
-        borderColor: '#757575',
-        justifyContent: 'space-between'
-    },
-    titleDetail :{
-        fontWeight: 'bold',
-        fontSize: 17,
-    },
-    aspek: {
-        marginTop: 10,
-    },
-    kondisi: {
-        marginTop: 10, 
-    },
-    kondisiText: {
-      color: '#757575',  
-    },
-    wrapShop: {
-        flexDirection : 'row',
-        display: 'flex',
-        backgroundColor: '#fff',
-        paddingTop: 15,
-        paddingLeft:15,
-        paddingRight: 15,
-        paddingBottom: 15,
         justifyContent: 'space-between',
-        marginTop: 10,
-    },
-    chatShop: {
-        borderWidth: 1,
-        fontSize: 12,
+        display: 'flex',
         flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 10,
     },
-    shop : {
-        borderWidth: 1,
-        fontSize: 12,
+    bawahprofil : {
+        width : "50%",
+        justifyContent: 'center',
+    },
+    bodyBawah : {
+        backgroundColor: "#fff",
+        width: "100%",
+        padding: 15,
+    },
+    subJudul : {
+        paddingBottom: 10,
+        paddingTop : 15,
+    },
+    subJudulText : {
+        fontSize : 15,
+        fontWeight : 'bold',
+    },
+    wrapBody : {
+        display: 'flex',
         flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 10,
+        borderBottomWidth: 1,
+        paddingTop :10,
+        paddingBottom: 5,
     },
-    shopText: {
-        paddingRight: 25,
-        paddingLeft: 25,
-        fontWeight: 'bold',
-    },
-    cart: {
-        borderWidth: 1,
-        fontSize: 12,
-        flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 10,
-        paddingLeft: 15,
-        paddingRight: 15,
-        borderRadius: 10,
-        backgroundColor: '#48696E',
-    },
-    cartText: {
-        paddingRight: 25,
-        paddingLeft: 25,
-        color: '#fff',
-        fontWeight: 'bold',
-
+    text : {
+        paddingLeft : 10,
     }
-
-
-    
-
-
 })
-
 export default Profil;

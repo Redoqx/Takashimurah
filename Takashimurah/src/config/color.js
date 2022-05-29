@@ -4,5 +4,6 @@ export default {
     backgroundColor: "white",
     panelColor: "#F3FFED",
     starColor : "#FFCE31",
-    activeColor:"#CDC775"
+    activeColor:"#CDC775",
+    blackColor: "#000"
 };
