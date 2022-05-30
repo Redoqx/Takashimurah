@@ -42,7 +42,8 @@ const Home = ({navigation}) => {
         <View>
             <Header/>
             <ScrollView style={{paddingTop: 5}}>
-                <Text >Laptop</Text>
+                {/* <Text >Laptop</Text> */}
+                <View style={Style.Item}>
                     {posts.map(post =>  (
                         <View name='area' style={Style.area} key= {post.id}>
                             <View name='container' style={Style.container}>
@@ -52,7 +53,7 @@ const Home = ({navigation}) => {
                                         source={{uri:post.image}}
                                         />
                                 </View>
-                                <Text name="nama barang">
+                                <Text name="nama barang" numberOfLines={2}>
                                     {post.productName}
                                 </Text>
                                 <Text name='harga'>
@@ -72,6 +73,7 @@ const Home = ({navigation}) => {
                             </View>
                         </View>    
                     ))} 
+                    </View>
                 </ScrollView>    
         </View>
     )
@@ -79,13 +81,18 @@ const Home = ({navigation}) => {
 
 const Style = StyleSheet.create({
     Item : {
-
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        paddingBottom: "25%",
     },
     area:{
         width: Wp2,
         height: Hp2*0.7,
         // backgroundColor: '#eaeaea',
-        alignItems: 'center'
+        alignItems: 'center',
+        // display: 'flex',
+        // flexDirection: 'row',
+
     },
     container:{
         margin: 10,
