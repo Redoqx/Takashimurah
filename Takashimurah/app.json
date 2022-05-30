@@ -4,7 +4,7 @@
     "slug": "Takashimurah",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/samurai.jpg",
+    "icon": "./assets/samurai.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
