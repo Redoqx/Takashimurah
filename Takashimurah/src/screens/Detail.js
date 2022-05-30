@@ -40,43 +40,35 @@ const Detail = ({route}) => {
                     </Text>
                 </View>
 
-                <View style={styles.wrap}>
-                    <View style={styles.wrapTerjual}>
-                        <View style={styles.textTerjual}>
-                            <Text>Terjual</Text>
-                        </View>
-                        <View style={styles.countTerjual}>
-                            <Text>21</Text>
-                        </View>
-                        
+                <View style={[{flexDirection:'row',padding:10, justifyContent:'space-between', backgroundColor:'white'}]}>
+                    <View style={[{padding:5}]}>
+                        <Text>Terjual 21</Text>
                     </View>
-                    <View style={styles.wrapRating}>
-                        <Feather name="star" size={19} color={color.starColor}/>
-                        <View style={styles.rating}>
-                            <Text>{postRating}</Text>
+                    <View style={[{flexDirection:'row'}]}>
+                        <View style={[{flexDirection:'row', padding:5, borderColor:'black', borderWidth:1, borderRadius:10, marginHorizontal:5}]}>
+                            <Feather name="star" size={19} color={color.starColor}/>
+                            <View >
+                                <Text>{postRating}</Text>
+                            </View>
+                            <View style={styles.countRating}>
+                                <Text>(14)</Text>
+                            </View>
                         </View>
-                        <View style={styles.countRating}>
-                            <Text>(14)</Text>
+                        <View style={[{flexDirection:'row', padding:5, borderColor:'black', borderWidth:1, borderRadius:10,marginHorizontal:5,}]}>
+                            <Text style={[{flexWrap:'wrap',flexDirection:'row'}]} numberOfLines={2}>Foto</Text>
+                            <View style={styles.countRating}>
+                                <Text>(14)</Text>
+                            </View>
                         </View>
-                    </View>
-
-                    <View style={styles.wrapTestimoni}>
-                        <View style={styles.testimoni}>
-                            <Text>Foto Pembeli</Text>
-                        </View>
-                        <View style={styles.countTestimoni}>
-                            <Text>(0)</Text>
-                        </View>
-                    </View>
-
-                    <View style={styles.wrapDiskusi}>
-                        <View style={styles.diskusi}>
+                        <View style={[{flexDirection:'row', padding:5, borderColor:'black', borderWidth:1, borderRadius:10,marginLeft:5}]}>
                             <Text>Diskusi</Text>
+                            <View style={styles.countRating}>
+                                <Text>(14)</Text>
+                            </View>
                         </View>
-                        <View style={styles.countDiskusi}>
-                            <Text>(0)</Text>
-                        </View>
+
                     </View>
+                    
                 </View>
 
                 <View style={styles.wrapToko}>
@@ -179,10 +171,12 @@ const styles = StyleSheet.create({
         paddingRight: 10,
         paddingBottom: 10,
         backgroundColor: '#fff',
+        flexDirection: 'row',
     },
     descText: {
         fontSize: 15,
         width:"100%",
+        flexWrap: 'wrap',
     },
     wrap: {
         flexDirection : 'row',
@@ -221,7 +215,7 @@ const styles = StyleSheet.create({
         padding: 2,
     },
     countRating: {
-        padding: 2,
+        paddingLeft: 2,
     },
     wrapTestimoni: {
         borderWidth: 1,
@@ -257,7 +251,7 @@ const styles = StyleSheet.create({
     },
     wrapToko:{
         flexDirection : 'row',
-        display: 'flex',
+        // display: 'flex',
         backgroundColor: '#fff',
         padding: 10,
         justifyContent: 'space-between',

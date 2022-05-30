@@ -63,7 +63,7 @@ const Home = ({navigation}) => {
                                                 
                                                 nama: post.productName,
                                                 harga: post.price,
-                                                rating: post.rating,
+                                                rating: post.grade,
                                                 image: post.image,
                                                 spesifikasi: post.description,
                                                 penjual:post.penjual
