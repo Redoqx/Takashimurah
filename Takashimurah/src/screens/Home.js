@@ -6,7 +6,7 @@ import{
 } from 'react-native';
 import Header from "./Header";
 import React from "react";
-// import ItemContainer from '../components/ItemContainter';
+import { Feather } from '@expo/vector-icons';
 import color from '.././config/color';
 
 const Wp2 = Dimensions.get('window').width/2;
@@ -45,7 +45,7 @@ const Home = ({navigation}) => {
                 {/* <Text >Laptop</Text> */}
                 <View style={Style.Item}>
                     {posts.map(post =>  (
-                        <View name='area' style={Style.area} key= {post.id}>
+                        <View name='area' style={Style.area} key= {post.id} >
                             <View name='container' style={Style.container}>
                                 <View name='gambar' style={Style.gambar}>
                                     <Image 
@@ -59,7 +59,7 @@ const Home = ({navigation}) => {
                                 <Text name='harga'>
                                     Rp. {post.price}
                                 </Text>
-                                <TouchableOpacity style={[{alignSelf:"flex-end", flexDirection:"row"}]} onPress={()=>navigation.navigate('Detail', {
+                                <TouchableOpacity style={[{alignSelf:"flex-end", flexDirection:"row", padding:20}]} onPress={()=>navigation.navigate('Detail', {
                                                 
                                                 nama: post.productName,
                                                 harga: post.price,
@@ -68,7 +68,7 @@ const Home = ({navigation}) => {
                                                 spesifikasi: post.description,
                                                 penjual:post.penjual
                                             })}>
-                                            <Text>Detail</Text>
+                                            <Text style={{color:color.headerFooterColor, fontWeight:"bold"}}>Detail</Text><Feather name="arrow-right" size={20} color={color.headerFooterColor}/>
                                 </TouchableOpacity>
                             </View>
                         </View>    

@@ -4,7 +4,7 @@ import { Feather } from '@expo/vector-icons';
 import color from '../config/color';
 import { useState } from 'react';
 
-import Product from '../../assets/Product.png'
+// import Product from '../../assets/Product.png'
 import profilToko from '../../assets/profilToko.png'
 import Header from './Header';
 
